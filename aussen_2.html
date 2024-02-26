@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Feenanzeiger</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<style>
+
+    #wrap { 
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        overflow: hidden;
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    #FAHRPLAN {
+        border: none;
+        width: 50% !important;
+        height: 50% !important;
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+    }
+
+    #wrap:hover {
+        top: 0vh;
+    }
+
+</style>
+
+<body style="overflow: hidden;">
+
+    
+
+
+    <div id="wrap">
+        <iframe scrolling="no" id="FAHRPLAN" src="https://bahn.expert/Buchholz(Nordheide)?autoUpdate=10&lineAndNumber=true&lookahead=480&onlyDepartures=true&sortByTime=true"></iframe>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
